@@ -1,14 +1,24 @@
+import getNowPlaying from "@/actions/getNowPlaying";
+import MovieCarousel from "@/components/MovieCarousel";
+import NowPlayingNav from "@/components/NowPlayingNav";
+
 type Params = {
-  num: number;
+  num: string;
 };
 type NowPlayingPageProps = {
   params: Params;
 };
 
-const NowPlayingPage = ({ params }: NowPlayingPageProps) => {
-  const pageNum = params.num;
+const NowPlayingPage = async ({ params }: NowPlayingPageProps) => {
+  const pageNum = Number(params.num);
+  const movieData = await getNowPlaying(pageNum);
 
-  return <div>{page}</div>;
+  return (
+    <>
+      <NowPlayingNav pageNum={pageNum}/>
+      <MovieCarousel movieData={movieData} />
+    </>
+  );
 };
 
 export default NowPlayingPage;

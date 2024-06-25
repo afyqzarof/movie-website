@@ -24,7 +24,7 @@ export default function RootLayout({
           </Link>
           <button className="text-lg">Search</button>
         </header>
-        {children}
+        <main className="flex flex-col items-center gap-4 p-4">{children}</main>
       </body>
     </html>
   );

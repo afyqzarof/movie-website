@@ -2,7 +2,7 @@ import { NowPlaying } from "@/types/NowPlaying";
 import React from "react";
 import MovieCard from "../MovieCard";
 
-type MovieCarouselProps = { movieData: NowPlaying | undefined };
+type MovieCarouselProps = { movieData?: NowPlaying };
 
 function MovieCarousel({ movieData }: MovieCarouselProps) {
   return (
