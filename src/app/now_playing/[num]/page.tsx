@@ -1,6 +1,7 @@
 import getNowPlaying from "@/actions/getNowPlaying";
-import MovieCarousel from "@/components/MovieCarousel";
-import NowPlayingNav from "@/components/NowPlayingNav";
+import MovieCarousel from "@/components/MovieCarousel/MovieCarousel";
+import NowPlayingNav from "@/components/NowPlayingNav/NowPlayingNav";
+import PageBtns from "@/components/PageBtns/PageBtns";
 
 type Params = {
   num: string;
@@ -15,8 +16,9 @@ const NowPlayingPage = async ({ params }: NowPlayingPageProps) => {
 
   return (
     <>
-      <NowPlayingNav pageNum={pageNum}/>
+      <NowPlayingNav pageNum={pageNum} />
       <MovieCarousel movieData={movieData} />
+      <PageBtns pageNum={pageNum} />
     </>
   );
 };

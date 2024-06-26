@@ -1,6 +1,6 @@
 import { NowPlaying } from "@/types/NowPlaying";
 import React from "react";
-import MovieCard from "../MovieCard";
+import MovieCard from "../MovieCard/MovieCard";
 
 type MovieCarouselProps = { movieData?: NowPlaying };
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import SearchPopup from "@/components/SearchPopup/SearchPopup";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,7 @@ export default function RootLayout({
           <Link href="/" className="text-lg">
             Movie Website
           </Link>
-          <button className="text-lg">Search</button>
+          <SearchPopup />
         </header>
         <main className="flex flex-col items-center gap-4 p-4">{children}</main>
       </body>
