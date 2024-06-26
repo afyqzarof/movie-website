@@ -1,4 +1,4 @@
-import getNowPlaying from "@/actions/getNowPlaying";
+import getNowPlaying from "@/lib/getNowPlaying";
 import MovieCarousel from "@/components/MovieCarousel/MovieCarousel";
 import NowPlayingNav from "@/components/NowPlayingNav/NowPlayingNav";
 import PageBtns from "@/components/PageBtns/PageBtns";
