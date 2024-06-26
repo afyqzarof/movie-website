@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <header className="flex justify-between bg-slate-200 px-2 py-4">
-          <Link href="/" className="text-lg">
+          <Link href="/" className="text-lg text-black">
             Movie Website
           </Link>
           <SearchPopup />

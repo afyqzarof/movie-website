@@ -1,8 +1,8 @@
-import { NowPlaying } from "@/types/NowPlaying";
+import { MovieData } from "@/types/NowPlaying";
 import React from "react";
 import MovieCard from "../MovieCard/MovieCard";
 
-type MovieCarouselProps = { movieData?: NowPlaying };
+type MovieCarouselProps = { movieData?: MovieData };
 
 function MovieCarousel({ movieData }: MovieCarouselProps) {
   return (
@@ -15,6 +15,7 @@ function MovieCarousel({ movieData }: MovieCarouselProps) {
               imgSrc={movie.poster_path}
               releaseDate={movie.release_date}
               rating={movie.vote_average}
+              id={movie.id.toString()}
             />
           </div>
         );

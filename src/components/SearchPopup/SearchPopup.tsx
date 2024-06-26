@@ -22,7 +22,7 @@ function SearchPopup() {
   };
   return (
     <Dialog>
-      <DialogTrigger>Search</DialogTrigger>
+      <DialogTrigger className="text-black">Search</DialogTrigger>
       <DialogContent aria-describedby={undefined}>
         <DialogTitle>Search for a movie</DialogTitle>
         <article>

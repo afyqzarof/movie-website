@@ -5,9 +5,10 @@ type MovieCardProps = {
   imgSrc: string | null;
   releaseDate: Date;
   rating: number;
+  id: string;
 };
 
-function MovieCard({ title, imgSrc, releaseDate, rating }: MovieCardProps) {
+function MovieCard({ title, imgSrc, releaseDate, rating, id }: MovieCardProps) {
   const imgBaseUrl = process.env.NEXT_PUBLIC_IMG_BASE_URL;
   const options = {
     year: "numeric" as const,
@@ -17,7 +18,7 @@ function MovieCard({ title, imgSrc, releaseDate, rating }: MovieCardProps) {
 
   const date = new Date(releaseDate);
   return (
-    <Link href={`/${title}`} className="flex h-full">
+    <Link href={`/movie/${id}`} className="flex h-full">
       <article className="flex w-full flex-col gap-4 rounded border-2 border-black p-4">
         <img
           src={imgSrc ? imgBaseUrl + imgSrc : "/poster-not-found.png"}
