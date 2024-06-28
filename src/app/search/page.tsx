@@ -9,7 +9,6 @@ type SearchProps = {
 async function Search({ searchParams }: SearchProps) {
   const query = searchParams.query;
   const movieData = await getSearch(query);
-  console.log(movieData);
 
   return (
     <div className="flex flex-col items-center gap-4">
