@@ -30,6 +30,10 @@ yarn dev
 
 ## Video of website:
 
+
+https://github.com/afyqzarof/movie-website/assets/83950596/723f282b-2e21-461e-93d7-f6799e51039e
+
+
 ## Improvements to be made
 
 - Add testing with jest
